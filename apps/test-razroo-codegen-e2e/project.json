@@ -1,0 +1,29 @@
+{
+  "name": "test-razroo-codegen-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/test-razroo-codegen-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/test-razroo-codegen-e2e/cypress.json",
+        "devServerTarget": "test-razroo-codegen:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "test-razroo-codegen:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/test-razroo-codegen-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["test-razroo-codegen"]
+}

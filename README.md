@@ -1,6 +1,6 @@
 # Test Razroo Codegen
 
-Razroo Angular Enterprise Starter. Created by world class consulting firms, vetted by Razroo. Trigger push.
+Razroo Angular Enterprise Starter. Created by world class consulting firms, vetted by Razroo.
 
 ## Hydrate Repository With Next Steps 🌊
 
